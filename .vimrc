@@ -17,7 +17,7 @@ Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -26,12 +26,11 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " =======自定义插件======
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'mattn/emmet-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
-Plugin 'Lokaltog/vim-powerline'
-" 注释插件
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'Lokaltog/vim-powerline'   
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -40,9 +39,11 @@ filetype plugin indent on    " required
 "
 " Brief help
 " :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+" :PluginClean      - confirms removal of unused plugins; append `!` to
+auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
@@ -88,6 +89,7 @@ set softtabstop=4
 "   ===========快捷键========
 map <F5> :NERDTreeToggle<CR>
 
+autocmd VimEnter * NERDTree
 
 " =====主题=====
 " set background=dark
@@ -96,5 +98,6 @@ map <F5> :NERDTreeToggle<CR>
 colorscheme molokai
 let g:molokai_original = 1
 let g:Powerline_colorscheme='solarized256'
+
 
 
