@@ -83,7 +83,8 @@ set tabstop=4
 set shiftwidth=4
 " 让 vim 把连续数量的空格视为一个制表符
 set softtabstop=4
-
+" 让 NERDTess显示隐藏文件
+let NERDTreeShowHidden=1
 
 "   ===========快捷键========
 map <Tab> :NERDTreeToggle<CR>
