@@ -31,6 +31,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'Lokaltog/vim-powerline'   
+Plugin 'mileszs/ack.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -39,11 +40,9 @@ filetype plugin indent on    " required
 "
 " Brief help
 " :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just
-" :PluginUpdate
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to
-auto-approve removal
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
@@ -87,9 +86,9 @@ set softtabstop=4
 
 
 "   ===========快捷键========
-map <F5> :NERDTreeToggle<CR>
-
-autocmd VimEnter * NERDTree
+map <Tab> :NERDTreeToggle<CR>
+map <C-f> :Ack -i
+" autocmd VimEnter * NERDTree
 
 " =====主题=====
 " set background=dark
@@ -98,6 +97,5 @@ autocmd VimEnter * NERDTree
 colorscheme molokai
 let g:molokai_original = 1
 let g:Powerline_colorscheme='solarized256'
-
 
 
