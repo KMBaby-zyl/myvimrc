@@ -32,6 +32,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'Lokaltog/vim-powerline'   
 Plugin 'mileszs/ack.vim'
+Plugin 'git:https://github.com/fholgado/minibufexpl.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -85,6 +86,18 @@ set shiftwidth=4
 set softtabstop=4
 " 让 NERDTess显示隐藏文件
 let NERDTreeShowHidden=1
+
+" 显示/隐藏 MiniBufExplorer 窗口
+map <Leader>bl :MBEToggle<cr>
+" buffer 切换快捷键
+map <C-Tab> :MBEbn<cr>
+map <C-S-Tab> :MBEbp<cr>
+
+" 基于缩进或语法进行代码折叠
+"set foldmethod=indent
+ set foldmethod=syntax
+" 启动 vim 时关闭折叠代码
+ set nofoldenable
 
 "   ===========快捷键========
 map <Tab> :NERDTreeToggle<CR>
