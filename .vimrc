@@ -102,6 +102,7 @@ map <Leader>bl :MBEToggle<CR>
 " buffer 切换快捷键
 map <Tab> :MBEbn<CR>
 map <S-Tab> :MBEbp<CR>
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
 " autocmd VimEnter * NERDTree
 
