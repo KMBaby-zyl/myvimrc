@@ -95,13 +95,13 @@ let NERDTreeShowHidden=1
  set nofoldenable
 
 "   ===========快捷键========
-map <Tab> :NERDTreeToggle<CR>
+map <C-t> :NERDTreeToggle<CR>
 map <C-f> :Ack -i
 " 显示/隐藏 MiniBufExplorer 窗口
 map <Leader>bl :MBEToggle<CR>
 " buffer 切换快捷键
-map <C-l> :MBEbn<CR>
-map <C-h> :MBEbp<CR>
+map <Tab> :MBEbn<CR>
+map <S-Tab> :MBEbp<CR>
 
 " autocmd VimEnter * NERDTree
 
