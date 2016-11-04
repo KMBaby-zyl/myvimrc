@@ -95,7 +95,9 @@ let NERDTreeShowHidden=1
  set nofoldenable
 
 "   ===========快捷键========
+" 打开目录
 map <C-t> :NERDTreeToggle<CR>
+" 全局查询
 map <C-f> :Ack -i
 " 显示/隐藏 MiniBufExplorer 窗口
 map <Leader>bl :MBEToggle<CR>
