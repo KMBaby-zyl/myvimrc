@@ -109,15 +109,17 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 " autocmd VimEnter * NERDTree
 
 " =====主题=====
-set background=dark
 " colorscheme solarized
 "let g:solarized_termcolors=256
- colorscheme molokai
 " colorscheme desert
-let g:molokai_original = 1
 "let g:Powerline_colorscheme='solarized256'
 
+
+let g:molokai_original = 1
+let g:molokai_termcolors=256
+set background=dark
 set cursorline
+colorscheme molokai
 
 
 
