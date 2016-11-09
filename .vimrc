@@ -29,10 +29,12 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mattn/emmet-vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tomasr/molokai'
 Plugin 'Lokaltog/vim-powerline'   
 Plugin 'mileszs/ack.vim'
 Plugin 'fholgado/minibufexpl.vim'
+" 主题
+Plugin 'tomasr/molokai'
+Plugin 'git@github.com:fugalh/desert.vim.git'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -95,9 +97,7 @@ let NERDTreeShowHidden=1
  set nofoldenable
 
 "   ===========快捷键========
-" 打开目录
 map <C-t> :NERDTreeToggle<CR>
-" 全局查询
 map <C-f> :Ack -i
 " 显示/隐藏 MiniBufExplorer 窗口
 map <Leader>bl :MBEToggle<CR>
@@ -109,11 +109,15 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 " autocmd VimEnter * NERDTree
 
 " =====主题=====
-" set background=dark
+set background=dark
 " colorscheme solarized
-" let g:solarized_termcolors=256
-colorscheme molokai
+"let g:solarized_termcolors=256
+ colorscheme molokai
+" colorscheme desert
 let g:molokai_original = 1
-let g:Powerline_colorscheme='solarized256'
+"let g:Powerline_colorscheme='solarized256'
+
+set cursorline
+
 
 
