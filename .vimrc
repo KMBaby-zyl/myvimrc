@@ -27,11 +27,16 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " =======自定义插件======
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+" HTML 插件
 Plugin 'mattn/emmet-vim'
+" 代码补全
+"Plugin 'vim-snippets'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/vim-powerline'   
 Plugin 'mileszs/ack.vim'
 Plugin 'fholgado/minibufexpl.vim'
+Plugin 'pangloss/vim-javascript'
+"Plugin 'kien/ctrlp.vim'
 " 主题
 Plugin 'tomasr/molokai'
 Plugin 'git@github.com:fugalh/desert.vim.git'
@@ -113,7 +118,11 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 "let g:solarized_termcolors=256
 " colorscheme desert
 "let g:Powerline_colorscheme='solarized256'
-
+"
+" Enables syntax highlighting for JSDocs.
+let g:javascript_plugin_jsdoc = 1
+" 支持高亮写在JavaScript中的CSS和HTML
+let javascript_enable_domhtmlcss = 1
 
 let g:molokai_original = 1
 let g:molokai_termcolors=256
