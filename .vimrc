@@ -29,6 +29,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 " HTML 插件
 Plugin 'mattn/emmet-vim'
+Plugin 'digitaltoad/vim-pug'
 " 代码补全
 "Plugin 'vim-snippets'
 Plugin 'altercation/vim-colors-solarized'
