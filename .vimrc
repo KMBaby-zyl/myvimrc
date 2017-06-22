@@ -1,5 +1,5 @@
 set nocompatible              " be iMproved, required
-5filetype off                  " required
+filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 " esLint
 Plugin 'scrooloose/syntastic' " 可以调用外部命令行工具来进行代码风格检查
 Plugin 'Chiel92/vim-autoformat' "可以调用外部命令行工具来格式化代码
- 
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -127,6 +127,15 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 let g:javascript_plugin_jsdoc = 1
 " 支持高亮写在JavaScript中的CSS和HTML
 let javascript_enable_domhtmlcss = 1
+" eslint 配置
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_always_populate_loc_list = 1
+
+" esLint 格式化配置
+let g:formatdef_eslint = '"SRC=eslint-temp-${RANDOM}.js; cat - >$SRC; eslint --fix $SRC >/dev/null 2>&1; cat $SRC | perl -pe \"chomp if eof\"; rm -f $SRC"'
+let g:formatters_javascript = ['eslint']
+noremap <F3> :Autoformat<CR>:w<CR>
+
 
 let g:molokai_original = 1
 let g:molokai_termcolors=256
