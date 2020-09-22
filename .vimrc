@@ -29,7 +29,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " =======自定义插件======
 Plugin 'scrooloose/nerdtree'
+"=====注释====
 Plugin 'scrooloose/nerdcommenter'
+let g:NERDSpaceDelims=1
 " JSX语法
 Plugin 'mxw/vim-jsx'
 " HTML 插件
